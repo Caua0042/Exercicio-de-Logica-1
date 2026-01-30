@@ -1,0 +1,48 @@
+package com.caua.nivel1;
+
+import java.util.Scanner;
+
+public class nivel1 {
+
+	public static void main(String[] args) {
+		
+		Scanner in = new Scanner (System.in);
+		
+		int num;
+		
+		System.out.print("Digite um número: ");
+		num = in.nextInt();
+		
+		int maior = num; int menor = num; double soma = num; 
+		
+		for(int i = 0; i <9; ++i) {
+			
+		System.out.print("Digite um número: ");
+		num = in.nextInt();
+		
+		soma = soma + num;
+		
+		if(num > maior) {
+			
+			maior = num;
+			
+		} 
+			if(num < menor) {
+				
+				menor = num;
+				
+			}
+		
+		}
+		
+		double media = soma / 10;
+		
+		System.out.print("Maior: ");
+		System.out.println(maior);
+		System.out.print("Menor: ");
+		System.out.println(menor);
+		System.out.print("Média: ");
+		System.out.println(media);
+	}
+	
+}
